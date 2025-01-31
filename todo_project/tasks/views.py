@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Task
 from .forms import TaskForm
 
+
 def task_list(request):
     tasks = Task.objects.all()
     form = TaskForm()
